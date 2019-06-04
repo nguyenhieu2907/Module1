@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers=prompt(" Nhap so luong so nguyen to can in ra :");
+        var count=0;
+        var n=2;
+        text="";
+        while (count<numbers){
+            if (n%2!=0 && n%3!=0){
+                if (n==2 || n==3){
+                    continue;
+                }
+                text+="<br>" + n +" la so nguyen to";
+                count++;
+            }
+            n++;
+            
+
+        }
+        document.write(text);
+    </script>
+    
+</body>
+</html>
