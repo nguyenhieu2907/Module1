@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var x = [-3, 5, 1, 2, 3, 10];
+        var max = x[0];
+        var index=0;
+        for (var i = 1; i < x.length; i++) {
+            if (x[i] > max) {
+                max = x[i];
+                index = i;
+            }
+        }
+        alert("gia tri lon nhat la " + max + " o vi tri so " + index);
+    </script>
+</body>
+
+</html>

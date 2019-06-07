@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form method="post" action="" onsubmit="return validateForm()">
+                <input type="text" name="tienganh" id="tienganh" value=""/> <br/><br/>
+                <input type="button" name="TraCuu" value="Tra Cứu" onClick="tracuu_tudien()">
+        </form>
+        <script>
+            var tienganhArray = ["hello", "goodbye", "thank you", "sorry"];
+            var tiengvietArray = ["xin chào", "tạm biệt", "cảm ơn", "xin lỗi"];
+            
+
+            function tracuu_tudien(){
+                var kq=false;
+                var tutracuu = document.getElementById("tienganh").value;
+                for ( var i=0; i<tienganhArray.length; i++){
+                    if(tienganhArray[i] === tutracuu) {
+                        document.write(tiengvietArray[i]);
+                        kq = true;
+                        break;
+                    }
+                }
+
+                if (!kq) { 
+                    document.write('không tìm thấy');
+                }
+            }
+            
+            
+
+        </script>
+</body>
+</html>
