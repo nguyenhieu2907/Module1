@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var x = [5,4,1,8,12,14,16,17,99,54];
+        var dem = 1;
+        for ( var i = 0; i<x.length; i++){
+            if ( x[i] >= 10){
+                document.write( x[i] + " thỏa mãn điều kiện" + "<br>" );
+                dem++;
+            }
+            else {
+                document.write(x[i] + " không thỏa mãn điều kiện" + "<br>");
+            }
+        }
+        document.write("Có " +dem+ " thỏa mãn điều kiện lớn hơn hoặc bằng 10");
+
+        
+
+    </script>
+</body>
+
+</html>

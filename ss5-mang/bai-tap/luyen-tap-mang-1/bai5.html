@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=[];
+        var soluong=prompt("Nhập số lượng số vào mảng :");
+        for (var i=0; i<soluong; i++){
+            x.push(prompt("Nhập phần tử :"))
+        }
+        dem=0;
+        for ( var j=0; j<soluong;j++){
+            if (x[j]<0){
+                dem++;
+            }
+        }
+        document.write("Có "+dem+" số là số nguyên âm");
+
+    </script>
+</body>
+</html>

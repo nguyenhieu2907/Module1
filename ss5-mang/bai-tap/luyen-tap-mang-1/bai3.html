@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = [];
+        var soluong=prompt(" Nhập số lượng số vào mảng : ");
+        for ( var j=0; j<soluong; j++){
+            x.push(prompt(" Nhập số nguyên vào mảng"));
+        }
+        max = x[0];
+        for ( var i=0; i< soluong ;i++) {
+            
+            if ( x[i]> max){
+                max = x[i];
+            }
+        }
+        document.write(max+ " là giá trị lớn nhất" +"<br>");
+        tong=0;
+        var TB=parseFloat;
+        for (var h=0; h<soluong; h++){
+            tong = tong + x[h];
+        }
+        TB = tong / soluong;
+        document.write(" Trung bình của các số là : " +TB);  
+
+        
+
+
+        
+        
+    </script>
+</body>
+</html>
