@@ -9,9 +9,9 @@
 <body>
     <script>
         var x = [];
-        var soluong=prompt(" Nhập số lượng số vào mảng : ");
+        var soluong = +prompt(" Nhập số lượng số vào mảng : ");
         for ( var j=0; j<soluong; j++){
-            x.push(prompt(" Nhập số nguyên vào mảng"));
+            x.push(+prompt(" Nhập số nguyên vào mảng"));
         }
         max = x[0];
         for ( var i=0; i< soluong ;i++) {
@@ -22,6 +22,7 @@
         }
         document.write(max+ " là giá trị lớn nhất" +"<br>");
         tong=0;
+        
         var TB=parseFloat;
         for (var h=0; h<soluong; h++){
             tong = tong + x[h];
