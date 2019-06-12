@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function snt(number) {
+            var kt = true;
+            if (number == 1){
+                kt = false;
+            }
+            else{
+                for ( var i = 2; i < number -1; i++ ){
+                    if ( number % i ==0 ){
+                        kt = false;
+                        break;
+                    }
+                }
+            }
+            if ( kt == true){
+                document.write(number+ " la so mot nguyen to" + "<br/>");
+            }
+            else {
+                document.write(number+ " khong phai la mot so nguyen to" + "<br/>")
+            }
+        }
+        var number = parseInt(prompt("Nhap so :"));
+        snt(number)
+    </script>
+</body>
+</html>

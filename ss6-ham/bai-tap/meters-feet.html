@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+        <label>Foot</label>
+        <input id="inputfoot" type="number" placeholder="Foot"
+                oninput="footToMeter(this.value)"
+                onchange="footToMeter(this.value)">
+                <span id="outputfoot"></span></p>
+        </p>
+        <p>
+            <label>Meters</label> 
+            <input id="inputfeet" type="number" placeholder="Meters"
+                oninput="meterstoFoot(this.value)"
+                onchange="meterstoFoot(this.value)">
+            <span id="outputmeters"></span></p>
+                
+    </form>
+    <script>
+        function footToMeter(foot)
+        var foot = parseFloat;
+        document.getElementById("outputmeters").innerHTML= foot * 0.305;
+    </script>
+</body>
+</html>
