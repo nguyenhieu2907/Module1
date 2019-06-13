@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var star=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        var constellation= ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+        var tam = false;
+        index =0;
+        function check(){
+            for ( var i = 0; i < star.length; i++){
+                if ( starName == star[i] ){
+                    star[i] = constellation[i];
+                    tam = true;
+                    index = i;
+                }
+                else{
+                    tam = false;
+                }
+            }
+            if ( tam == true){
+                alert(constellation[index])
+            }
+            else{
+                alert(" Khong co chom sao tuong ung")
+            }
+
+        }
+        starName = prompt (" Nhap ten ngoi sao :");
+        check();
+    </script>
+</body>
+</html>

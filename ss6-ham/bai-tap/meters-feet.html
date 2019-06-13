@@ -9,24 +9,28 @@
 <body>
     <form>
         <p>
-        <label>Foot</label>
-        <input id="inputfoot" type="number" placeholder="Foot"
-                oninput="footToMeter(this.value)"
-                onchange="footToMeter(this.value)">
-                <span id="outputfoot"></span></p>
-        </p>
+            <label>Foot</label>
+            <input id="inputfoot" type="number" oninput="footToMeters(this.value)" onchange="footToMeters(this.value)">       
+            </p>
+            <p>Meter: <span id="outputMeters"></span></p>
+
         <p>
-            <label>Meters</label> 
-            <input id="inputfeet" type="number" placeholder="Meters"
-                oninput="meterstoFoot(this.value)"
-                onchange="meterstoFoot(this.value)">
-            <span id="outputmeters"></span></p>
+            <label>Meters</label>
+            <input id="inputmeters" type="number" oninput="meterstoFoot(this.value)" onchange="meterstoFoot(this.value)">          
+            </p>
+            <p>Foot: <span id="outputFoot"></span></p>
                 
     </form>
     <script>
-        function footToMeter(foot)
-        var foot = parseFloat;
-        document.getElementById("outputmeters").innerHTML= foot * 0.305;
+        function footToMeters(foot){
+            var foot = parseFloat(foot).toFixed(3);
+            document.getElementById("outputMeters").innerHTML= foot * 0.305;
+        }
+        function meterstoFoot(meters){
+            var meters = parseFloat(meters).toFixed(3);
+            document.getElementById("outputFoot").innerHTML= meters * 3.279;
+        }
+
     </script>
 </body>
 </html>
