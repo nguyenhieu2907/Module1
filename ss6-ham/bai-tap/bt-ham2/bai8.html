@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daonguocmang(x){
+            return 1;
+        }
+
+        var x= [];
+        var soluong=prompt(" Nhap so luong phan tu cho mang :");
+        for ( var i =0; i < soluong; i++){
+            x.push(prompt(" Nhap phan tu cho mang :"));
+        }
+        x.join(",");
+        var kq=daonguocmang(x);
+        if ( kq == 1){
+            document.write(x.reverse());
+
+        }
+
+    </script>
+</body>
+</html>

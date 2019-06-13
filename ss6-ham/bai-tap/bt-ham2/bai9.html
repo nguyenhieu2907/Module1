@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dem = 0;
+        kt = false;
+        function kiemtra(x, a){
+            for (var j=0; j <x.length ; j++){
+                if ( a == x[j]){
+                    dem++;
+                    kt = true;
+                }
+            }
+        }
+    
+        var x = [];
+        soluong=prompt(" Nhap SO LUONG phan tu cho mang: ")
+        for (var i =0; i< soluong; i ++){
+            x.push(prompt(" Nhap phan tu cho mang : "))
+        }
+        x.join(",");
+        var a=prompt(" Nhap vao so BAT KY :");
+      
+        var kq = kiemtra(x, a);
+        if (kt){
+            alert(" Ki tu "+a+" co nam trong mang va xuat hien " +dem+ " lan");
+        }
+        else (!kt)
+            alert("-1");
+    </script>
+</body>
+</html>

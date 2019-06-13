@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function nhapham(x){
+            var x = [];
+            soluong=prompt(" Nhap SO LUONG phan tu cho mang: ")
+            for (var i =0; i< soluong; i ++){
+            x.push(prompt(" Nhap phan tu cho mang : "))
+        }
+        x.join();
+        }
+
+        var dem = 0;
+        kq = false;
+        var batky=prompt(" Nhap vao so BAT KY :");
+        var kt= nhapham(x);
+        for ( var i = 0; i < soluong; i ++){
+            if ( batky === x[j]){
+                dem++;
+                kq=true;
+            }
+            
+            }
+        
+        if ( kq){
+            alert(" Ki tu "+batky+" co nam trong mang va xuat hien " +dem+ " lan");
+        }
+        else (!kq)
+            alert("-1");
+    </script>
+</body>
+</html>

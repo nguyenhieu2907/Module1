@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var tam;
+
+        function swap(x, y){
+            var tam = x;
+            var x = y;
+            var y = tam;
+            document.write(" So x truoc khi doi la " +tam+ ", so y truoc khi doi la " +x +"<br/>");
+            document.write(" So x sau khi doi la " +x+ ",so y sau khi doi la "+tam);
+        }
+
+        var x = parseInt(prompt(" Nhap so nguyen x"));
+        var y = parseInt(prompt(" Nhap so nguyen y"));
+        swap(x, y);
+    </script>
+</body>
+</html>

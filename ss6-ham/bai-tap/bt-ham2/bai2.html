@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const pi = 3.14;
+
+        function chuvi(r){
+            var cv = r * 2 * pi;
+            return cv;
+        }
+
+        function dientich(r){
+            var dt = r * r * pi;
+            return dt;
+        }
+
+        var r = parseFloat(prompt(" Nhap ban kinh hinh tron :"));
+        var kqChuVi = chuvi(r).toFixed(2);
+        var kqDientich = dientich(r).toFixed(2);
+        document.write(" Chu vi hinh tron la : " +kqChuVi+ "<br/>");
+        document.write(" Dien tich hinh tron la : " +kqDientich);
+    </script>
+</body>
+</html>

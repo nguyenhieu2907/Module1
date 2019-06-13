@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var min;
+        function gtnn(a, b, c){
+            if ( a <b && a < c ){
+                min = a;
+            }
+            else if ( a <b && a >c || b < a && b >c){
+                min = c;
+            }
+            else if ( b < a && b < c){
+                min = b;
+            }
+            alert(" GTNN la " +min);
+        }
+
+        var a = parseInt(prompt(" Nhap so nguyen thu nhat :"));
+        var b = parseInt(prompt(" Nhap so nguyen thu hai :"));
+        var c = parseInt(prompt(" Nhap so nguyen thu ba :"));
+        gtnn(a, b, c);
+    </script>
+</body>
+</html>
