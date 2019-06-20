@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id ="myCanvas" width="500px" height="300px" style="border:1px solid #d3d3d3;">
+
+    <script>
+        function Hinhchunhat(rong, dai){
+            this.rong = rong;
+            this.dai = dai;
+            this.chuvi = function(){
+                chuvi = rong + dai;
+            };
+            this.dientich = function(){
+                dientich = rong * dai;
+            };
+            this.hienthi = function(){
+            alert(" Chu vi la "+chuvi+" ; Dien tich la " +dientich);
+            };
+        };
+        var hinhcn = new Hinhchunhat( 15, 30);
+        hinhcn.chuvi();
+        hinhcn.dientich();
+        hinhcn.hienthi();
+        function taohinhcn(){
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        ctx.beginPath();
+        ctx.rect(250, 150, 15, 30);
+        ctx.stroke();
+        }
+        taohinhcn();
+
+    </script>
+</body>
+</html>
